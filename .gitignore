@@ -1,6 +1,6 @@
 .idea/*
 .settings/*
-Running/*
+Running/*.out
 .project
 .classpath
 .classpath
