@@ -1,0 +1,12 @@
+syntax="proto2";
+package DistributedLocking;
+option java_outer_classname = "Messageproto";
+message Message{
+  required string name = 1;
+  message ClockPair {
+    required int32 ProcessNumber = 1;
+    required int32 Counter = 2  ;
+  }
+  repeated ClockPair pair = 3;
+  required int32 ProcessID = 4;	
+}
